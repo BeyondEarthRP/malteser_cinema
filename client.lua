@@ -1,7 +1,6 @@
 local cinematicbars = true
 local hideminimap = false
 
-
 AddEventHandler("playerSpawned", function(spawn)
 	SendNUIMessage({
 		action = "close"
@@ -26,6 +25,7 @@ AddEventHandler('malte-cinema:activate', function()
 	end
 end)
 
+--[[ JAY REMOVED THIS- CONFLICTING WITH TREW_HUD_UI
 Citizen.CreateThread(function()
 	while true do
 		Citizen.Wait(0)
@@ -36,3 +36,4 @@ Citizen.CreateThread(function()
 		end
 	end
 end)
+]]--
